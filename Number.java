@@ -9,6 +9,7 @@ public class Number {
         int min = 0;
         int max = 10;
         int i = 0;
+        int a = 0;
         System.out.println("START!");
         while (i < 3) {
             Scanner scanner = new Scanner(System.in);
