@@ -11,9 +11,14 @@ public class Number {
         int i = 0;
         System.out.println("START!");
         while (i < 3) {
-            System.out.print("my number = ");
             Scanner scanner = new Scanner(System.in);
-            int a = scanner.nextInt();
+            System.out.print("my number = ");
+            if (scanner.hasNextInt()) {
+                a = scanner.nextInt();
+            } else {
+                System.out.println("IT IS NOT A NUMBER");
+                continue;
+            }
             if (a < 0 || a > 10) {
                 System.out.println("INVALID NUMBER");
                 continue;
